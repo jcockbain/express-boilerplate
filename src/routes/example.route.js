@@ -1,11 +1,11 @@
-const express = require('express')
+const express = require('express');
 
-const tasksController = require('../controllers/example.controller')
+const tasksController = require('../controllers/example.controller');
 
-const router = express.Router()
+const router = express.Router();
 
-router.route('/').get(tasksController.getExample)
+router.route('/').get(tasksController.getExample);
 
-router.route('/:id').get(tasksController.getExampleByID)
+router.route('/:id').get(tasksController.getExampleByID);
 
-module.exports = router
+module.exports = router;
