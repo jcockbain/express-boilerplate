@@ -1,13 +1,13 @@
-const { logError } = require('../utils')
+const { logError } = require('../utils');
 
-function handleErrors (error, req, res, next) {
-  logError(error)
-  const statusCode = error.status || 500
+function handleErrors(error, req, res, next) {
+  logError(error);
+  const statusCode = error.status || 500;
   res.status(statusCode).send({
-    error: error.message
-  })
+    error: error.message,
+  });
 }
 
 module.exports = {
-  handleErrors
-}
+  handleErrors,
+};

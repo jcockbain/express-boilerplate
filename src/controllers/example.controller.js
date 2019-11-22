@@ -1,25 +1,25 @@
 const getExample = (req, res, next) => {
   try {
     res.json({
-      success: true
-    })
+      success: true,
+    });
   } catch (err) {
-    next(err)
+    next(err);
   }
-}
+};
 
 const getExampleByID = (req, res, next) => {
   try {
-    const { id } = req.params
+    const { id } = req.params;
     res.json({
-      number: id
-    })
+      number: id,
+    });
   } catch (err) {
-    next(err)
+    next(err);
   }
-}
+};
 
 module.exports = {
   getExample,
-  getExampleByID
-}
+  getExampleByID,
+};
